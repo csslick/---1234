@@ -16,18 +16,21 @@ $(function(){
   );
 
   // 이미지 슬라이더
-  let img_num = 0; // 이미지 번호
+  let 이미지번호 = 0; // 이미지 번호
+  let 이미지높이값= 300;
+  let 전환주기 = 3000;
 
   setInterval(function(){
-    img_num++; // 이미지 번호 증가
+    이미지번호++; // 이미지 번호 증가
     // 마지막 이미지면 처음으로
-    if(img_num > 2) {
-      img_num = 0;
+    if(이미지번호 > 2) {
+      이미지번호 = 0;
     }
     $('.slider > .sliders').css({
-      transform: `translateY(${-img_num*300}px)`
+      // 이동값 = 이미지번호 x 이미지 높이값
+      transform: `translateY(${-이미지번호 * 이미지높이값}px)`
     })
-  }, 3000)
+  }, 전환주기)
 
 
 }) // $
