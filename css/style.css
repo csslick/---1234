@@ -45,7 +45,7 @@ header nav > .depth1 {
 }
 
 header nav > .depth1 > li {
-  outline: 1px solid #666;
+  /* outline: 1px solid #666; */
   width: 7rem;
   text-align: center;
 }
@@ -83,3 +83,27 @@ header nav .depth2.show {
 header nav .depth1 > li > a:hover {
   opacity: 0.7;
 } 
+
+
+/* 2단계 메뉴 hover */
+header nav .depth2 > li > a:hover {
+  background: #999;
+  color: #fff;
+}
+
+
+.slider {
+  width: 1200px;
+  height: 300px;
+  /* outline: 3px solid red; */
+  overflow: hidden;
+}
+
+.slider > .sliders {
+  transform: translateY(0);
+  transition: 1s;
+}
+
+.slider > .sliders > img {
+  display: block;
+}
