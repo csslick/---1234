@@ -33,4 +33,30 @@ $(function(){
   }, 전환주기)
 
 
+  // 탭 UI
+  // 공지사항 버튼
+  $('.btn-group .btn-notice').on('click', function(){
+    console.log('btn-notice')
+    // 버튼 클래스 초기화
+    $('#notice-box, #gallery-box').removeClass('show');
+    $('#notice-box').addClass('show');
+
+    // 버튼 스타일
+    $('.btn-group > a').removeClass('show');
+    $(this).addClass('show');
+  })
+
+  // 갤러리 버튼
+  $('.btn-group .btn-gallery').on('click', function(){
+    console.log('btn-gallery')
+    // 버튼 클래스 초기화
+    $('#notice-box, #gallery-box').removeClass('show');
+    $('#gallery-box').addClass('show');
+
+    // 버튼 스타일
+    $('.btn-group > a').removeClass('show');
+    $(this).addClass('show');
+  })
+
+
 }) // $

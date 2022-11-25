@@ -171,3 +171,18 @@ header nav .depth2 > li > a:hover {
   display: flex;
   margin-top: 20px;
 }
+
+
+/* 탭 버튼 스타일 */
+.btn-notice, .btn-gallery {
+  background: #ccc;
+}
+
+.btn-notice.show {
+  background: #fff;
+  
+}
+
+.btn-gallery.show {
+  background: #fff;
+}
